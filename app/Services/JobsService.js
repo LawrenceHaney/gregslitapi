@@ -7,7 +7,14 @@ import { api } from "./AxiosService.js";
 
 
 //class service
-    class JobsService{
+class JobsService{
+  async createJob(nJob) {
+    //async create
+        let obj = await api.post('jobs', nJob)
+  let job = new Job(obj.data.data)
+  
+  ProxyState.jobs = [...ProxyState.jobs, job]
+}
 
 //async get
 async getJobs(){
@@ -17,8 +24,13 @@ async getJobs(){
   console.log(ProxyState.jobs)
 }
 //async remove
+async removeJob(id) {
+  await api.delete(`jobs/${id}`)
+  ProxyState.jobs = ProxyState.jobs.filter(j => j.id !== id)
 
-//async create
+
+}
+
     }
 //const
 const SERVICE = new JobsService()

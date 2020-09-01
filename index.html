@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/main.css">
     <title>gregslist2</title>
 </head>
@@ -72,34 +73,29 @@
                 <div class="row">
                     <div class="row my-3">
                         <div class="col" id="form">
-                            <form onsubmit="app.carsController.createJob()" class="form-inline">
+                            <form onsubmit="app.jobsController.createJob()" class="form-inline">
                                 <div class="form-group p-1">
-                                    <label class="mr-1" for="make">Make</label>
-                                    <input type="text" name="make" id="make" class="form-control" placeholder="Make...">
+                                    <label class="mr-1" for="jobTitle">Job Title</label>
+                                    <input type="text" name="jobTitle" id="jobTitle" class="form-control" placeholder="We need...">
                                 </div>
                                 <div class="form-group p-1">
-                                    <label class="mr-1" for="model">Model</label>
-                                    <input type="text" name="model" id="model" class="form-control" placeholder="Model...">
+                                    <label class="mr-1" for="company">Company</label>
+                                    <input type="text" name="company" id="company" class="form-control" placeholder="@">
                                 </div>
                                 <div class="form-group p-1">
-                                    <label class="mr-1" for="year">Year</label>
-                                    <input type="number" name="year" id="year" class="form-control" placeholder="Year..." min="1900"
-                                        max="2021">
+                                    <label class="mr-1" for="rate">Pay Rate</label>
+                                    <input type="number" name="rate" id="rate" class="form-control" placeholder="$">
                                 </div>
                                 <div class="form-group p-1">
-                                    <label class="mr-1" for="price">Price</label>
-                                    <input type="number" name="price" id="price" class="form-control" placeholder="Price...">
+                                    <label class="mr-1" for="hours">Hours</label>
+                                    <input type="number" name="hours" id="hours" class="form-control" placeholder="Hours...">
                                 </div>
                                 <div class="form-group p-1">
                                     <label class="mr-1" for="description">Description</label>
-                                    <input type="text" name="description" id="description" class="form-control"
+                                    <input type="text" name="description" id="jobdescription" class="form-control"
                                         placeholder="Description...">
                                 </div>
-                                <div class="form-group p-1">
-                                    <label class="mr-1" for="img">Image Url</label>
-                                    <input type="url" name="img" id="img" class="form-control" placeholder="Image Url...">
-                                </div>
-                                <button type="submit" class="btn btn-outline-success">Add Car</button>
+                                <button type="submit" class="btn btn-outline-success">Add Job</button>
                             </form>
                         </div>
                     </div>

@@ -6,6 +6,7 @@ import Job from "./Models/Car.js"
 class AppState extends EventEmitter {
   /** @type {Car[]} */
   cars = []
+  
   /**@type {Job[]} */
   jobs = []
 }

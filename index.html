@@ -100,11 +100,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" id="jobData">
+                <div class="row justify-content-around" id="jobData">
                     
                 </div>
             </div>
             <div class="tab-pane fade" id="homestab" role="tabpanel" aria-labelledby="homes-tab">
+                    <div class="row my-3">
+                        <div class="col" id="form">
+                            <form onsubmit="app.homesController.createHome()" class="form-inline">
+                                <div class="form-group p-1">
+                                    <label class="mr-1" for="year">Year</label>
+                                    <input type="number" name="year" id="year" class="form-control" placeholder="built">
+                                </div>
+                                <div class="form-group p-1">
+                                    <label class="mr-1" for="price">Price</label>
+                                    <input type="number" name="price" id="pricehome" class="form-control" placeholder="$">
+                                </div>
+                                <div class="form-group p-1">
+                                    <label class="mr-1" for="bed">Bedrooms</label>
+                                    <input type="number" name="bed" id="bed" class="form-control" placeholder="...">
+                                </div>
+                                <div class="form-group p-1">
+                                    <label class="mr-1" for="bath">Bathrooms</label>
+                                    <input type="number" name="bath" id="bath" class="form-control" placeholder="...">
+                                </div>
+                                <div class="form-group p-1">
+                                    <label class="mr-1" for="levels">levels</label>
+                                    <input type="number" name="levels" id="levels" class="form-control" placeholder="...">
+                                </div>
+                                <div class="form-group p-1">
+                                    <label class="mr-1" for="description">Tell us more</label>
+                                    <input type="text" name="description" id="description" class="form-control" placeholder="about this home">
+                                </div>
+                                <div class="form-group p-1">
+                                    <label class="mr-1" for="img">Image</label>
+                                    <input type="text" name="img" id="imgform" class="form-control" placeholder="link">
+                                </div>
+                                
+
+                                <button type="submit" class="btn btn-outline-success">List Home</button>
+                            </form>
+                        </div>
+                    </div>
+            <div class="row" id="homeData"></div>
 
             </div>
           </div>
@@ -127,3 +165,4 @@
 </body>
 
 </html>
+

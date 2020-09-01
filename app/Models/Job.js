@@ -13,7 +13,7 @@ constructor({_id, company, description, hours, jobTitle, rate, }){
 //templating
 get Template(){
   return `
-  <div class="card col-4 bg-seconday text-center">
+  <div class="card col-3 m-1 bg-seconday text-center">
   <h3 class="card-title">${this.jobTitle}</h3>
   <h6>${this.company}</h6>
   <p class="text-subtle">${this.description}</p>
